@@ -1,0 +1,4 @@
+credits:
+
+Flame and bounce sprites ripped by skink
+Code by "Master" of Disaster (that's me!!!)

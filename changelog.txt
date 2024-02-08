@@ -1,0 +1,9 @@
+------CHANGELOG------
+
+v1.0.1
+- Fixed water boxes not disappearing when their layer is hidden.
+- Made bubble despawning overall less buggy.
+
+v1.0.2
+- Fixed a bug where various NPCs that use player defines, like Launch Barrels, don't work properly
+- X2 character support is also better, but might be improved in a future update

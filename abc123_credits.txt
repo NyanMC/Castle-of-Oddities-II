@@ -1,0 +1,60 @@
+Global Lua:
+    littleDialogue by MrDoubleA
+    antizip.lua by Emral
+    Frog Switch by Core
+    FakeBlocks.lua by Sambo
+    pauseMenu.lua by Marioman2007
+    Gold Mushroom by FutureNyanCat
+Level Specific Lua:
+    Shroom Forest:
+        MDA's Swinging Platforms by MrDoubleA
+    Rainy Ruins:
+        icantswim by cold soup
+    Flooded Forest:
+        NPC Tower by MrDoubleA (didn't get used in the level)
+        Exclamation Mark Block by MrDoubleA
+Music:
+    Kirby and the Forgotten Land:
+        Originull Wasteland
+    Paper Mario 64:
+        Siege on Bowser's Castle
+    Paper Mario - The Thousand Year Door:
+        Petalburg
+    Pizza Tower:
+        It's Pizza Time!
+        The Death That I Deservioli
+    Plok:
+        Cotton Island
+    Shovel Knight Dig:
+        Spore Judgement
+        Thermal Vent
+        Pest Friends
+    Sonic Adventure:
+        Tornado (Windy Valley)
+        Windy Hill (Windy Valley)
+    Sonic Superstars:
+        Bridge Island Zone 1
+        Lagoon City Zone 2
+        Press Factory Zone 1
+        Sand Sanctuary Zone
+        Speed Jungle Zone 1
+        Speed Jungle Zone Sonic
+        Speed Jungle Zone 2
+    Strike the Earth! Shovel Knight Arranged:
+        Sub Atomic
+    Super Mario 3D World:
+        Footlight Lane
+    Wario Land 4:
+        Hall of Hieroglyphs
+        Hurry Up!
+        Monsoon Jungle
+        World Map
+Graphics:
+    Mario Maker 2 SMW Water Brick Tileset by Lithobraker
+    SMW Chocolate Grass by Knuckles96
+    SMW Mountain Tileset by AirShip & 8luestorm
+    SMW Mystic Cavern Tileset by PixelPest
+Other:
+    A handful of sound effects from Wario Land 4, primarily voice clips (all of which were found on The Sounds Resource)
+    One sound effect from Mario Kart: Super Circuit is used for the havesomefun cheat
+    A voice clip from Warioware Gold is used for the pizzatime cheat

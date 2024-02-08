@@ -1,0 +1,9 @@
+{
+    "Title": "Castle of Oddities II",
+	"allowPlayerSelection": false,
+	"allowTwoPlayer": false,
+    "customProgress": true,
+    "starIcon": "points.png",
+    "collectible": "point",
+    "collectibles": "points:"
+}
