@@ -22,6 +22,7 @@ Player.setCostume(1,"wario",true)
 currentlyBoss = false
 isPanic = false
 uniquePanicMusic = true
+isMetal = false
 
 local windowNamePrefix = nil
 
@@ -102,9 +103,11 @@ end
 
 function onExit()
     player.character = 1 -- we need to do this on exit and not on start otherwise funky behavior happens with wario when restarting guest character levels
+    player.powerup = 2
 end
 
 function onTick()
+	player:mem(0x160, FIELD_WORD, 10)
 	if player.powerup == 1 then player.powerup = 2 end
     if Misc.coins() >= 99 then
         Misc.warn("Coin count reached or exceeded 99, consider reducing concentration of coins")
@@ -160,6 +163,12 @@ function onPostPlayerHarm(harmedplayer)
     end
 end
 
+function onPlayerHarm(token, p)
+    if (isMetal) then
+        token.cancelled = true
+    end
+end
+
 function onPlayerKill(token, p)
     if not currentlyBoss then
         token.cancelled = true
@@ -201,6 +210,26 @@ function panic()
     changeWindowName("Panic! at the")
 end
 
+function mechanize()
+    isMetal = true
+    SFX.play(Misc.resolveFile("yahoo.wav"))
+	for i = 0, 20 do
+		Audio.SeizeStream(i)
+		Audio.MusicOpen("metal_wonder.ogg")
+		Audio.MusicPlay()
+	end
+    player.powerup = 3
+    Defines.player_grav = 0.6
+end
+
+function mamamia()
+    if not isMetal then return end
+    SFX.play(Misc.resolveFile("mamamia.wav"))
+    isMetal = false
+    player.powerup = 2
+    Defines.player_grav = 0.4
+end
+
 function onEvent(name)
 	if (name == "panic") then
         panic()
@@ -213,6 +242,10 @@ function onEvent(name)
                 SaveData.topscores[Level.filename()] = Misc.score()
             end
         end
+    elseif (name == "mechanize") then
+        mechanize()
+    elseif (name == "mamamia") then
+        mamamia()
 	end
 end
 
@@ -260,3 +293,21 @@ newcheats.register("funisinfinite", { onActivate =
                                         SaveData.fun = math.huge
                                         return true;
                                     end, activateSFX = Misc.resolveSoundFile("goldmushroom.ogg")})
+
+newcheats.register("mechanize", { onActivate =
+									function()
+										if (isOverworld) then
+											return true
+										end
+										mechanize()
+										return true;
+									end, activateSFX = 34})
+
+newcheats.register("mamamia", { onActivate =
+									function()
+										if (isOverworld) then
+											return true
+										end
+										mamamia()
+										return true;
+									end, activateSFX = 34})

@@ -44,6 +44,8 @@ Music:
         Sub Atomic
     Super Mario 3D World:
         Footlight Lane
+    Super Mario Bros. Wonder:
+        Wonder Effect - Metal Mario
     Wario Land 4:
         Hall of Hieroglyphs
         Hurry Up!

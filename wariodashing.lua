@@ -106,6 +106,7 @@ local usedinair = false	-- whether the player has already used the air dash; pre
 local dashdirection = 0 -- the direction the player is dashing into; used to detect when he turns around (which stops the dash)
 local dashSFX = Misc.resolveFile("dive.ogg")
 local hitwallSFX = Misc.resolveFile("Wario_landonenemy.wav")
+local attackEnemySFX = Misc.resolveFile("Wario_AttackEnemy.wav")
 local dashframes = Graphics.loadImageResolved("shoulderbashingframes.png")
 local wariorolling = require("wariorolling")
 local burning = require("transformation_burning")
@@ -271,6 +272,9 @@ function wariodashing.onTick()
 		for p, b in ipairs(Colliders.getColliding{a = dashingColliderBlock, btype = Colliders.BLOCK, filter = blockFilter}) do        -- check if it is really a slope hit
 			if ((Block.MEGA_SMASH_MAP[b.id]) or (table.contains(whitelistedBlocks,b.id))) and not (table.contains(blacklistedBlocks,b.id)) then
 				b:remove(true)
+				if isMetal then
+					return
+				end
 			end
 			b:hit()
 			SFX.play(hitwallSFX)
@@ -296,6 +300,10 @@ function wariodashing.onTick()
 					elseif (NPC.SHELL_MAP[v.id]) then
 						v.speedY = - 4
 						v.speedX = player.direction * 6
+					end
+					if isMetal then
+						SFX.play(attackEnemySFX)
+						return
 					end
 					if player:mem(0x36,FIELD_BOOL) then
 						player.speedY = -1
