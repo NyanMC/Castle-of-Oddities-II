@@ -6,13 +6,13 @@ Global Lua:
     pauseMenu.lua by Marioman2007
     Gold Mushroom by FutureNyanCat
 Level Specific Lua:
-    Shroom Forest:
-        MDA's Swinging Platforms by MrDoubleA
     Rainy Ruins:
         icantswim by cold soup
     Flooded Forest:
         NPC Tower by MrDoubleA (didn't get used in the level)
         Exclamation Mark Block by MrDoubleA
+    Cyberspace Hellscape:
+        Momentum Teleporters by Emral
 Music:
     Kirby and the Forgotten Land:
         Originull Wasteland
@@ -34,6 +34,7 @@ Music:
         Windy Hill (Windy Valley)
     Sonic Superstars:
         Bridge Island Zone 1
+        Cyber Station Zone
         Lagoon City Zone 2
         Press Factory Zone 1
         Sand Sanctuary Zone
@@ -52,6 +53,7 @@ Music:
         Monsoon Jungle
         World Map
 Graphics:
+    Custom Digital Tileset by AirShip
     Mario Maker 2 SMW Water Brick Tileset by Lithobraker
     SMW Chocolate Grass by Knuckles96
     SMW Mountain Tileset by AirShip & 8luestorm
