@@ -241,6 +241,7 @@ function bouncing.onTick()
 			player.speedY = -9	-- then end up at speed of 9 upwards
 			end
 			for p, b in ipairs(Colliders.getColliding{a = bounceCollider, btype = Colliders.BLOCK, filter = blockFilter}) do        -- check if it is really a slope hit
+				if inputLocked then return end -- added by ChromaNyan; this is set by teleportSpot.lua when in a teleporter, don't bonk when teleporting
 				if ((Block.MEGA_SMASH_MAP[b.id]) or (table.contains(breakableBlock,b.id))) and not (table.contains(unbreakableBlock,b.id)) then
 					b:remove(true)
 				elseif not ((Block.MEGA_SMASH_MAP[b.id]) or (table.contains(breakableBlock,b.id))) and not (table.contains(unbreakableBlock,b.id)) then
@@ -253,6 +254,7 @@ function bouncing.onTick()
 					b:hit()
 			end
 			for p, v in ipairs(Colliders.getColliding{a = bounceCollider, btype = Colliders.NPC}) do        -- hitting solid npcs stops the bounce as well
+				if inputLocked then return end -- added by ChromaNyan; this is set by teleportSpot.lua when in a teleporter, don't bonk when teleporting
 				if NPC.PLAYERSOLID_MAP[v.id] then
 					bouncing.stage = 0		-- fall down again
 					proceedToNextPhase = false
@@ -275,6 +277,7 @@ function bouncing.onTick()
 				bouncetimer = bouncetimer + 1
 			end
 			if (player:mem(0x14A,FIELD_WORD) == 2) or (player.speedY == -0.01) then	-- hit a ceiling
+				if inputLocked then return end -- added by ChromaNyan; this is set by teleportSpot.lua when in a teleporter, don't bonk when teleporting
 				bouncing.stage = 0		-- fall down again
 				proceedToNextPhase = false
 				hitCeiling = true		-- if you hit the ground, you'll now bounce and end the squish
