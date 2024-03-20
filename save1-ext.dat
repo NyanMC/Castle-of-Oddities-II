@@ -1,14 +1,14 @@
 {
 --[1]--
 {
+   ["fun"]=2,
    ["__costumes"]={2},
-   ["__progress"]=303520,
+   ["__progress"]=322630,
    ["_lakitushop"]={3},
    ["topscores"]={4},
-   ["__launcher"]={5},
+   ["_basegame"]={5},
    ["_currencies"]={6},
-   ["_basegame"]={7},
-   ["fun"]=2
+   ["__launcher"]={7}
 },
 --[2]--
 {
@@ -20,24 +20,29 @@
 },
 --[4]--
 {
-   ["lightsoutlane.lvlx"]=23020,
-   ["tutorial.lvlx"]=16050,
-   ["mysticmines.lvlx"]=15260,
-   ["rainyruins.lvlx"]=17810,
-   ["creepycrawlycavern.lvlx"]=20470,
-   ["potterywasteland.lvlx"]=15500,
-   ["submergedunderground.lvlx"]=15650,
-   ["shroomforest.lvlx"]=36290,
    ["floodedforest.lvlx"]=20470,
    ["cannonshotfacility.lvlx"]=29310,
    ["waterfallplains.lvlx"]=27660,
+   ["shroomforest.lvlx"]=36290,
    ["hillierhills.lvlx"]=19440,
    ["cloudy_climb.lvlx"]=22430,
-   ["supersubmarine.lvlx"]=24160
+   ["supersubmarine.lvlx"]=24160,
+   ["rainyruins.lvlx"]=17810,
+   ["lightsoutlane.lvlx"]=23020,
+   ["tutorial.lvlx"]=16050,
+   ["mysticmines.lvlx"]=15260,
+   ["creepycrawlycavern.lvlx"]=20470,
+   ["potterywasteland.lvlx"]=15500,
+   ["submergedunderground.lvlx"]=15650,
+   ["cyberspacehellscape.lvlx"]=19110
 },
 --[5]--
 {
-
+   ["starcoin"]={9},
+   ["starcoinCounter"]=30,
+   ["_characterdata"]={10},
+   ["hud"]={11},
+   ["bigSwitch"]={12}
 },
 --[6]--
 {
@@ -45,11 +50,7 @@
 },
 --[7]--
 {
-   ["starcoin"]={9},
-   ["starcoinCounter"]=28,
-   ["_characterdata"]={10},
-   ["hud"]={11},
-   ["bigSwitch"]={12}
+
 },
 --[8]--
 {
@@ -57,35 +58,36 @@
 },
 --[9]--
 {
-   ["lightsoutlane.lvlx"]={13},
-   ["tutorial.lvlx"]={14},
-   ["mysticmines.lvlx"]={15},
-   ["rainyruins.lvlx"]={16},
-   ["creepycrawlycavern.lvlx"]={17},
-   ["potterywasteland.lvlx"]={18},
-   ["submergedunderground.lvlx"]={19},
-   ["hub.lvlx"]={20},
-   ["floodedforest.lvlx"]={21},
-   ["shroomforest.lvlx"]={22},
-   ["cannonshotfacility.lvlx"]={23},
-   ["waterfallplains.lvlx"]={24},
-   ["hillierhills.lvlx"]={25},
-   ["cloudy_climb.lvlx"]={26},
-   ["supersubmarine.lvlx"]={27}
+   ["floodedforest.lvlx"]={13},
+   ["cannonshotfacility.lvlx"]={14},
+   ["waterfallplains.lvlx"]={15},
+   ["shroomforest.lvlx"]={16},
+   ["hub.lvlx"]={17},
+   ["hillierhills.lvlx"]={18},
+   ["cloudy_climb.lvlx"]={19},
+   ["supersubmarine.lvlx"]={20},
+   ["rainyruins.lvlx"]={21},
+   ["lightsoutlane.lvlx"]={22},
+   ["tutorial.lvlx"]={23},
+   ["mysticmines.lvlx"]={24},
+   ["creepycrawlycavern.lvlx"]={25},
+   ["potterywasteland.lvlx"]={26},
+   ["submergedunderground.lvlx"]={27},
+   ["cyberspacehellscape.lvlx"]={28}
 },
 --[10]--
 {
-   ["9"]={28},
-   ["7"]={29},
-   ["10"]={30},
-   ["16"]={31},
-   ["14"]={32},
-   ["13"]={33},
-   ["6"]={34},
-   ["11"]={35},
-   ["8"]={36},
-   ["12"]={37},
-   ["15"]={38}
+   ["9"]={29},
+   ["16"]={30},
+   ["14"]={31},
+   ["13"]={32},
+   ["11"]={33},
+   ["12"]={34},
+   ["15"]={35},
+   ["7"]={36},
+   ["8"]={37},
+   ["6"]={38},
+   ["10"]={39}
 },
 --[11]--
 {
@@ -100,196 +102,198 @@
    1,
    1,
    ["maxID"]=2,
-   ["alive"]={39}
+   ["alive"]={40}
 },
 --[14]--
 {
    1,
    1,
    ["maxID"]=2,
-   ["alive"]={40}
+   ["alive"]={41}
 },
 --[15]--
 {
    1,
    1,
    ["maxID"]=2,
-   ["alive"]={41}
+   ["alive"]={42}
 },
 --[16]--
 {
    1,
    1,
    ["maxID"]=2,
-   ["alive"]={42}
+   ["alive"]={43}
 },
 --[17]--
 {
-   1,
-   1,
-   ["maxID"]=2,
-   ["alive"]={43}
+   ["maxID"]=0,
+   ["alive"]={44}
 },
 --[18]--
 {
    1,
    1,
    ["maxID"]=2,
-   ["alive"]={44}
+   ["alive"]={45}
 },
 --[19]--
 {
    1,
    1,
    ["maxID"]=2,
-   ["alive"]={45}
-},
---[20]--
-{
-   ["maxID"]=0,
    ["alive"]={46}
 },
---[21]--
+--[20]--
 {
    1,
    1,
    ["maxID"]=2,
    ["alive"]={47}
 },
---[22]--
+--[21]--
 {
    1,
    1,
    ["maxID"]=2,
    ["alive"]={48}
 },
---[23]--
+--[22]--
 {
    1,
    1,
    ["maxID"]=2,
    ["alive"]={49}
 },
---[24]--
+--[23]--
 {
    1,
    1,
    ["maxID"]=2,
    ["alive"]={50}
 },
---[25]--
+--[24]--
 {
    1,
    1,
    ["maxID"]=2,
    ["alive"]={51}
 },
---[26]--
+--[25]--
 {
    1,
    1,
    ["maxID"]=2,
    ["alive"]={52}
 },
---[27]--
+--[26]--
 {
    1,
    1,
    ["maxID"]=2,
    ["alive"]={53}
 },
+--[27]--
+{
+   1,
+   1,
+   ["maxID"]=2,
+   ["alive"]={54}
+},
 --[28]--
 {
-   ["0x108"]=0,
-   ["0x16"]=1,
-   ["0x10A"]=0,
-   ["powerup"]=1,
-   ["reservePowerup"]=0
+   1,
+   1,
+   ["maxID"]=2,
+   ["alive"]={55}
 },
 --[29]--
 {
-   ["0x108"]=0,
-   ["0x16"]=1,
-   ["0x10A"]=0,
    ["powerup"]=1,
+   ["0x10A"]=0,
+   ["0x16"]=1,
+   ["0x108"]=0,
    ["reservePowerup"]=0
 },
 --[30]--
 {
-   ["0x108"]=0,
-   ["0x16"]=1,
-   ["0x10A"]=0,
    ["powerup"]=1,
+   ["0x10A"]=0,
+   ["0x16"]=1,
+   ["0x108"]=0,
    ["reservePowerup"]=0
 },
 --[31]--
 {
-   ["0x108"]=0,
-   ["0x16"]=1,
-   ["0x10A"]=0,
    ["powerup"]=1,
+   ["0x10A"]=0,
+   ["0x16"]=1,
+   ["0x108"]=0,
    ["reservePowerup"]=0
 },
 --[32]--
 {
-   ["0x108"]=0,
-   ["0x16"]=1,
-   ["0x10A"]=0,
    ["powerup"]=1,
+   ["0x10A"]=0,
+   ["0x16"]=1,
+   ["0x108"]=0,
    ["reservePowerup"]=0
 },
 --[33]--
 {
-   ["0x108"]=0,
-   ["0x16"]=1,
-   ["0x10A"]=0,
    ["powerup"]=1,
+   ["0x10A"]=0,
+   ["0x16"]=1,
+   ["0x108"]=0,
    ["reservePowerup"]=0
 },
 --[34]--
 {
-   ["0x108"]=0,
-   ["0x16"]=1,
-   ["0x10A"]=0,
    ["powerup"]=1,
+   ["0x10A"]=0,
+   ["0x16"]=1,
+   ["0x108"]=0,
    ["reservePowerup"]=0
 },
 --[35]--
 {
-   ["0x108"]=0,
-   ["0x16"]=1,
-   ["0x10A"]=0,
    ["powerup"]=1,
+   ["0x10A"]=0,
+   ["0x16"]=1,
+   ["0x108"]=0,
    ["reservePowerup"]=0
 },
 --[36]--
 {
-   ["0x108"]=0,
-   ["0x16"]=1,
-   ["0x10A"]=0,
    ["powerup"]=1,
+   ["0x10A"]=0,
+   ["0x16"]=1,
+   ["0x108"]=0,
    ["reservePowerup"]=0
 },
 --[37]--
 {
-   ["0x108"]=0,
-   ["0x16"]=1,
-   ["0x10A"]=0,
    ["powerup"]=1,
+   ["0x10A"]=0,
+   ["0x16"]=1,
+   ["0x108"]=0,
    ["reservePowerup"]=0
 },
 --[38]--
 {
-   ["0x108"]=0,
-   ["0x16"]=1,
-   ["0x10A"]=0,
    ["powerup"]=1,
+   ["0x10A"]=0,
+   ["0x16"]=1,
+   ["0x108"]=0,
    ["reservePowerup"]=0
 },
 --[39]--
 {
-   true,
-   true
+   ["powerup"]=1,
+   ["0x10A"]=0,
+   ["0x16"]=1,
+   ["0x108"]=0,
+   ["reservePowerup"]=0
 },
 --[40]--
 {
@@ -313,8 +317,7 @@
 },
 --[44]--
 {
-   true,
-   true
+
 },
 --[45]--
 {
@@ -323,7 +326,8 @@
 },
 --[46]--
 {
-
+   true,
+   true
 },
 --[47]--
 {
@@ -356,6 +360,16 @@
    true
 },
 --[53]--
+{
+   true,
+   true
+},
+--[54]--
+{
+   true,
+   true
+},
+--[55]--
 {
    true,
    true

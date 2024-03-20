@@ -2,7 +2,7 @@ why did i do this
 
 This is my most recent work-in-progress SMBX2 episode. I decided to post it to GitHub for reasons that I don't even know.
 
-The episode is about 70% content complete right now. Three of five planned worlds are finished, as well as two levels in world 4.
+The episode is about 75% content complete right now. Three of five planned worlds are finished, as well as three levels in world 4.
 
 Credits are in abc123_credits.txt.
 
