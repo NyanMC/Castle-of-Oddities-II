@@ -49,6 +49,10 @@ function cheatedcookies.onStart()
 		fancyPrint("Nah, I'm just kidding. Use this menu all you\nwant, if you can get any use out of it.")
 		GameData._cheatedcookies = true
 	end
+	
+	if Defines.player_hasCheated then
+		Defines.player_hasCheated = false
+	end
 end
 
 return cheatedcookies

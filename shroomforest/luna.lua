@@ -5,7 +5,7 @@ uniquePanicMusic = false -- use speed jungle 2 even in the panic escape
 require("switch").setMaxTime(120)
 
 function onStart()
-    changeWindowName("A guest appearance in the")
+    changeWindowName("It's the Toad hour in the")
 end
 
 function onLoadSection1()

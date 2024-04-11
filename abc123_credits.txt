@@ -34,6 +34,10 @@ Music:
     Sonic Adventure:
         Tornado (Windy Valley)
         Windy Hill (Windy Valley)
+    Sonic Mania:
+        Rogue's Gallery (Mirage Saloon 2)
+        Skyway Octane (Mirage Saloon 1 S&T)
+        Wildstyle Pistolero (Mirage Saloon 1 K)
     Sonic Superstars:
         Bridge Island Zone 1
         Cyber Station Zone

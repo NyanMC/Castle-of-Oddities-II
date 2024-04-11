@@ -13,7 +13,8 @@ local totalscore = 0
 local scoreWalls = {
     w2barrier = 30000,
     w3barrier = 100000,
-    w4barrier = 175000
+    w4barrier = 175000,
+    w5barrier = 250000
 }
 
 local funEvents = {
