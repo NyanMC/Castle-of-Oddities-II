@@ -3,7 +3,9 @@ local powerupStates = table.map{
     FORCEDSTATE_POWERUP_HAMMER,FORCEDSTATE_POWERUP_ICE,FORCEDSTATE_POWERDOWN_FIRE,FORCEDSTATE_POWERDOWN_ICE,FORCEDSTATE_MEGASHROOM,
 }
 
-require("switch").setMaxTime(100)
+require("switch").setMaxTime(90)
+
+uniquePanicMusic = false
 
 function onStart()
     changeWindowName("Infiltrating desert tanks in the")
