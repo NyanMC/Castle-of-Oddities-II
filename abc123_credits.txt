@@ -16,6 +16,8 @@ Level Specific Lua:
 Music:
     Kirby and the Forgotten Land:
         Originull Wasteland
+    Kirby Planet Robobot:
+        Haltmann Works Co. HQ
     Paper Mario 64:
         Siege on Bowser's Castle
     Paper Mario - The Thousand Year Door:
@@ -35,10 +37,12 @@ Music:
         Tornado (Windy Valley)
         Windy Hill (Windy Valley)
     Sonic Mania:
+        Built to Rule (Titanic Monarch 1)
         Rogue's Gallery (Mirage Saloon 2)
         Skyway Octane (Mirage Saloon 1 S&T)
         Wildstyle Pistolero (Mirage Saloon 1 K)
     Sonic Superstars:
+        Boss 2
         Bridge Island Zone 1
         Cyber Station Zone
         Lagoon City Zone 2
@@ -52,6 +56,7 @@ Music:
     Super Mario 3D World:
         Footlight Lane
     Super Mario Bros. Wonder:
+        Petal Isles - Castle Bowser
         Wonder Effect - Metal Mario
     Wario Land 4:
         Hall of Hieroglyphs

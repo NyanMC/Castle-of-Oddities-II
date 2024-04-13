@@ -58,7 +58,11 @@ function switch.activate(x, y, id)
 		end
 		
 		Audio.SeizeStream(-1)
-		Audio.MusicOpen("hurry_up.ogg")
+		if hasWorld5EscapeMusic then
+			Audio.MusicOpen("hurry_w5.ogg")
+		else
+			Audio.MusicOpen("hurry_up.ogg")
+		end
 		Audio.MusicPlay()
 		
 		clock.x = x

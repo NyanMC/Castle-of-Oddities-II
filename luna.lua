@@ -22,6 +22,7 @@ Player.setCostume(1,"wario",true)
 currentlyBoss = false
 isPanic = false
 uniquePanicMusic = true
+hasWorld5EscapeMusic = false
 isMetal = false
 
 local windowNamePrefix = nil
@@ -63,6 +64,8 @@ function onStart()
 	--wariodashing.whitelistBlock(124)	-- weak Ghost House Blocks (breakable)
 	--wariodashing.whitelistNPC()	-- weak whatever you put in (hittable)
 	--wariodashing.blacklistNPC(1)	-- STRONG GOOMBA (not hittable anymore)
+
+    wariodashing.blacklistNPC(549)
 	
 	wariodashing.whitelistCharacter(1,"shoulderbashingframes.png")
 	dashattacking.whitelistCharacter(1,"dashattackingframes.png")
