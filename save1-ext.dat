@@ -1,14 +1,14 @@
 {
 --[1]--
 {
-   ["_currencies"]={2},
+   ["__launcher"]={2},
    ["_basegame"]={3},
+   ["topscores"]={4},
+   ["_currencies"]={5},
    ["fun"]=2,
-   ["__costumes"]={4},
-   ["_lakitushop"]={5},
-   ["__progress"]=366930,
-   ["topscores"]={6},
-   ["__launcher"]={7}
+   ["__costumes"]={6},
+   ["_lakitushop"]={7},
+   ["__progress"]=390830
 },
 --[2]--
 {
@@ -16,21 +16,13 @@
 },
 --[3]--
 {
-   ["starcoin"]={8},
-   ["starcoinCounter"]=34,
-   ["_characterdata"]={9},
-   ["hud"]={10},
-   ["bigSwitch"]={11}
+   ["bigSwitch"]={8},
+   ["hud"]={9},
+   ["starcoin"]={10},
+   ["starcoinCounter"]=36,
+   ["_characterdata"]={11}
 },
 --[4]--
-{
-
-},
---[5]--
-{
-   ["stock"]={12}
-},
---[6]--
 {
    ["rainyruins.lvlx"]=17810,
    ["lightsoutlane.lvlx"]=23020,
@@ -48,54 +40,64 @@
    ["cyberspacehellscape.lvlx"]=19110,
    ["aridsandscape.lvlx"]=22480,
    ["waterfallplains.lvlx"]=27660,
+   ["brimstoneboiler.lvlx"]=23900,
    ["hillierhills.lvlx"]=19440
+},
+--[5]--
+{
+
+},
+--[6]--
+{
+   ["1"]="wario"
 },
 --[7]--
 {
-
+   ["stock"]={12}
 },
 --[8]--
 {
-   ["rainyruins.lvlx"]={13},
-   ["hub.lvlx"]={14},
-   ["lightsoutlane.lvlx"]={15},
-   ["potterywasteland.lvlx"]={16},
-   ["creepycrawlycavern.lvlx"]={17},
-   ["cannonshotfacility.lvlx"]={18},
-   ["supersubmarine.lvlx"]={19},
-   ["floodedforest.lvlx"]={20},
-   ["chaosfactory.lvlx"]={21},
-   ["shroomforest.lvlx"]={22},
-   ["cloudy_climb.lvlx"]={23},
-   ["mysticmines.lvlx"]={24},
-   ["tutorial.lvlx"]={25},
-   ["submergedunderground.lvlx"]={26},
-   ["cyberspacehellscape.lvlx"]={27},
-   ["aridsandscape.lvlx"]={28},
-   ["waterfallplains.lvlx"]={29},
-   ["hillierhills.lvlx"]={30}
+
 },
 --[9]--
 {
-   ["10"]={31},
-   ["16"]={32},
-   ["13"]={33},
-   ["15"]={34},
-   ["14"]={35},
-   ["12"]={36},
-   ["11"]={37},
-   ["6"]={38},
-   ["7"]={39},
-   ["8"]={40},
-   ["9"]={41}
+   ["score"]=0
 },
 --[10]--
 {
-   ["score"]=0
+   ["rainyruins.lvlx"]={13},
+   ["lightsoutlane.lvlx"]={14},
+   ["potterywasteland.lvlx"]={15},
+   ["creepycrawlycavern.lvlx"]={16},
+   ["cannonshotfacility.lvlx"]={17},
+   ["supersubmarine.lvlx"]={18},
+   ["floodedforest.lvlx"]={19},
+   ["chaosfactory.lvlx"]={20},
+   ["shroomforest.lvlx"]={21},
+   ["cloudy_climb.lvlx"]={22},
+   ["mysticmines.lvlx"]={23},
+   ["tutorial.lvlx"]={24},
+   ["submergedunderground.lvlx"]={25},
+   ["cyberspacehellscape.lvlx"]={26},
+   ["aridsandscape.lvlx"]={27},
+   ["waterfallplains.lvlx"]={28},
+   ["brimstoneboiler.lvlx"]={29},
+   ["hub.lvlx"]={30},
+   ["hillierhills.lvlx"]={31}
 },
 --[11]--
 {
-
+   ["16"]={32},
+   ["13"]={33},
+   ["15"]={34},
+   ["12"]={35},
+   ["14"]={36},
+   ["7"]={37},
+   ["8"]={38},
+   ["10"]={39},
+   ["9"]={40},
+   ["11"]={41},
+   ["6"]={42}
 },
 --[12]--
 {
@@ -106,221 +108,224 @@
    1,
    1,
    ["maxID"]=2,
-   ["alive"]={42}
-},
---[14]--
-{
-   ["maxID"]=0,
    ["alive"]={43}
 },
---[15]--
+--[14]--
 {
    1,
    1,
    ["maxID"]=2,
    ["alive"]={44}
 },
---[16]--
+--[15]--
 {
    1,
    1,
    ["maxID"]=2,
    ["alive"]={45}
 },
---[17]--
+--[16]--
 {
    1,
    1,
    ["maxID"]=2,
    ["alive"]={46}
 },
---[18]--
+--[17]--
 {
    1,
    1,
    ["maxID"]=2,
    ["alive"]={47}
 },
---[19]--
+--[18]--
 {
    1,
    1,
    ["maxID"]=2,
    ["alive"]={48}
 },
---[20]--
+--[19]--
 {
    1,
    1,
    ["maxID"]=2,
    ["alive"]={49}
 },
---[21]--
+--[20]--
 {
    1,
    1,
    ["maxID"]=2,
    ["alive"]={50}
 },
---[22]--
+--[21]--
 {
    1,
    1,
    ["maxID"]=2,
    ["alive"]={51}
 },
---[23]--
+--[22]--
 {
    1,
    1,
    ["maxID"]=2,
    ["alive"]={52}
 },
---[24]--
+--[23]--
 {
    1,
    1,
    ["maxID"]=2,
    ["alive"]={53}
 },
---[25]--
+--[24]--
 {
    1,
    1,
    ["maxID"]=2,
    ["alive"]={54}
 },
---[26]--
+--[25]--
 {
    1,
    1,
    ["maxID"]=2,
    ["alive"]={55}
 },
---[27]--
+--[26]--
 {
    1,
    1,
    ["maxID"]=2,
    ["alive"]={56}
 },
---[28]--
+--[27]--
 {
    1,
    1,
    ["maxID"]=2,
    ["alive"]={57}
 },
---[29]--
+--[28]--
 {
    1,
    1,
    ["maxID"]=2,
    ["alive"]={58}
 },
---[30]--
+--[29]--
 {
    1,
    1,
    ["maxID"]=2,
    ["alive"]={59}
 },
+--[30]--
+{
+   ["maxID"]=0,
+   ["alive"]={60}
+},
 --[31]--
 {
-   ["0x108"]=0,
-   ["0x10A"]=0,
-   ["0x16"]=1,
-   ["powerup"]=1,
-   ["reservePowerup"]=0
+   1,
+   1,
+   ["maxID"]=2,
+   ["alive"]={61}
 },
 --[32]--
 {
    ["0x108"]=0,
    ["0x10A"]=0,
    ["0x16"]=1,
-   ["powerup"]=1,
-   ["reservePowerup"]=0
+   ["reservePowerup"]=0,
+   ["powerup"]=1
 },
 --[33]--
 {
    ["0x108"]=0,
    ["0x10A"]=0,
    ["0x16"]=1,
-   ["powerup"]=1,
-   ["reservePowerup"]=0
+   ["reservePowerup"]=0,
+   ["powerup"]=1
 },
 --[34]--
 {
    ["0x108"]=0,
    ["0x10A"]=0,
    ["0x16"]=1,
-   ["powerup"]=1,
-   ["reservePowerup"]=0
+   ["reservePowerup"]=0,
+   ["powerup"]=1
 },
 --[35]--
 {
    ["0x108"]=0,
    ["0x10A"]=0,
    ["0x16"]=1,
-   ["powerup"]=1,
-   ["reservePowerup"]=0
+   ["reservePowerup"]=0,
+   ["powerup"]=1
 },
 --[36]--
 {
    ["0x108"]=0,
    ["0x10A"]=0,
    ["0x16"]=1,
-   ["powerup"]=1,
-   ["reservePowerup"]=0
+   ["reservePowerup"]=0,
+   ["powerup"]=1
 },
 --[37]--
 {
    ["0x108"]=0,
    ["0x10A"]=0,
    ["0x16"]=1,
-   ["powerup"]=1,
-   ["reservePowerup"]=0
+   ["reservePowerup"]=0,
+   ["powerup"]=1
 },
 --[38]--
 {
    ["0x108"]=0,
    ["0x10A"]=0,
    ["0x16"]=1,
-   ["powerup"]=1,
-   ["reservePowerup"]=0
+   ["reservePowerup"]=0,
+   ["powerup"]=1
 },
 --[39]--
 {
    ["0x108"]=0,
    ["0x10A"]=0,
    ["0x16"]=1,
-   ["powerup"]=1,
-   ["reservePowerup"]=0
+   ["reservePowerup"]=0,
+   ["powerup"]=1
 },
 --[40]--
 {
    ["0x108"]=0,
    ["0x10A"]=0,
    ["0x16"]=1,
-   ["powerup"]=1,
-   ["reservePowerup"]=0
+   ["reservePowerup"]=0,
+   ["powerup"]=1
 },
 --[41]--
 {
    ["0x108"]=0,
    ["0x10A"]=0,
    ["0x16"]=1,
-   ["powerup"]=1,
-   ["reservePowerup"]=0
+   ["reservePowerup"]=0,
+   ["powerup"]=1
 },
 --[42]--
 {
-   true,
-   true
+   ["0x108"]=0,
+   ["0x10A"]=0,
+   ["0x16"]=1,
+   ["reservePowerup"]=0,
+   ["powerup"]=1
 },
 --[43]--
 {
-
+   true,
+   true
 },
 --[44]--
 {
@@ -398,6 +403,15 @@
    true
 },
 --[59]--
+{
+   true,
+   true
+},
+--[60]--
+{
+
+},
+--[61]--
 {
    true,
    true

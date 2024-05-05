@@ -1,7 +1,7 @@
 hasWorld5EscapeMusic = true
 uniquePanicMusic = false
 
-require("switch").setMaxTime(120)
+require("switch").setMaxTime(90)
 
 burning = require("transformation_burning")
 

@@ -4540,6 +4540,12 @@ ID:126;X:-99200;Y:-100096;W:32;H:32;
 ID:126;X:-99168;Y:-100128;W:32;H:32;
 ID:126;X:-99136;Y:-100096;W:32;H:32;
 ID:126;X:-99200;Y:-100128;W:32;H:32;
+ID:1151;X:-99168;Y:-100352;W:32;H:32;
+ID:1151;X:-99136;Y:-100352;W:32;H:32;
+ID:1151;X:-99104;Y:-100352;W:32;H:32;
+ID:1151;X:-99104;Y:-100320;W:32;H:32;
+ID:1151;X:-99136;Y:-100320;W:32;H:32;
+ID:1151;X:-99168;Y:-100320;W:32;H:32;
 BLOCK_END
 BGO
 ID:92;X:-199520;Y:-200192;
@@ -4600,6 +4606,7 @@ ID:107;X:-120160;Y:-120800;
 ID:141;X:-177376;Y:-180160;
 ID:141;X:-99904;Y:-100160;
 ID:107;X:-99488;Y:-100192;
+ID:107;X:-99136;Y:-100192;
 BGO_END
 NPC
 ID:151;X:-199464;Y:-200176;D:-1;MG:"1-1\: Introductory Caverns";FD:1;
@@ -4673,6 +4680,7 @@ ID:544;X:-99584;Y:-100256;D:-1;XTRA:"{\n    \"fireLifetime\"\: 0\n}\n";
 ID:544;X:-99392;Y:-100256;D:-1;XTRA:"{\n    \"fireLifetime\"\: 0\n}\n";
 ID:151;X:-99432;Y:-100176;D:-1;MG:"5-1\: Chaos Factory";FD:1;
 ID:94;X:-138624;Y:-140182;D:-1;MG:"<boxStyle ml>Don't need the full length of a jump? Sometimes\, cutting your jump short by releasing the jump button early will prevent bonking on ceilings and losing time.";FD:1;
+ID:151;X:-99080;Y:-100176;D:-1;MG:"5-2\: Brimstone Boiler";FD:1;
 NPC_END
 DOORS
 IX:-199520;IY:-200160;DT:2;ID:1;OD:1;LF:"tutorial.lvlx";LI:0;EX:1;
@@ -4697,6 +4705,7 @@ IX:-119808;IY:-120768;DT:2;ID:1;OD:1;LF:"cyberspacehellscape.lvlx";LI:0;EX:1;
 IX:-120160;IY:-120768;DT:2;ID:1;OD:1;LF:"aridsandscape.lvlx";LI:0;EX:1;
 IX:-177360;IY:-180096;OX:-99888;OY:-100096;DT:2;ID:1;OD:1;TW:1;
 IX:-99488;IY:-100160;DT:2;ID:1;OD:1;LF:"chaosfactory.lvlx";LI:0;EX:1;
+IX:-99136;IY:-100160;DT:2;ID:1;OD:1;LF:"brimstoneboiler.lvlx";LI:0;EX:1;
 DOORS_END
 LAYERS
 LR:"Default";
