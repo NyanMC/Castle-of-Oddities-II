@@ -1,54 +1,54 @@
 {
 --[1]--
 {
-   ["_lakitushop"]={2},
-   ["__launcher"]={3},
-   ["topscores"]={4},
+   ["_currencies"]={2},
+   ["_basegame"]={3},
    ["fun"]=2,
-   ["__progress"]=366590,
-   ["__costumes"]={5},
-   ["_basegame"]={6},
-   ["_currencies"]={7}
+   ["__costumes"]={4},
+   ["_lakitushop"]={5},
+   ["__progress"]=366930,
+   ["topscores"]={6},
+   ["__launcher"]={7}
 },
 --[2]--
 {
-   ["stock"]={8}
+
 },
 --[3]--
 {
-
+   ["starcoin"]={8},
+   ["starcoinCounter"]=34,
+   ["_characterdata"]={9},
+   ["hud"]={10},
+   ["bigSwitch"]={11}
 },
 --[4]--
 {
-   ["creepycrawlycavern.lvlx"]=20470,
-   ["aridsandscape.lvlx"]=22480,
-   ["floodedforest.lvlx"]=20470,
-   ["submergedunderground.lvlx"]=15650,
-   ["mysticmines.lvlx"]=15260,
-   ["lightsoutlane.lvlx"]=23020,
-   ["rainyruins.lvlx"]=17810,
-   ["supersubmarine.lvlx"]=24160,
-   ["cyberspacehellscape.lvlx"]=19110,
-   ["cannonshotfacility.lvlx"]=29310,
-   ["waterfallplains.lvlx"]=27660,
-   ["shroomforest.lvlx"]=36290,
-   ["hillierhills.lvlx"]=19440,
-   ["cloudy_climb.lvlx"]=22430,
-   ["potterywasteland.lvlx"]=15500,
-   ["tutorial.lvlx"]=16050,
-   ["chaosfactory.lvlx"]=21480
+
 },
 --[5]--
 {
-
+   ["stock"]={12}
 },
 --[6]--
 {
-   ["starcoin"]={9},
-   ["_characterdata"]={10},
-   ["starcoinCounter"]=34,
-   ["bigSwitch"]={11},
-   ["hud"]={12}
+   ["rainyruins.lvlx"]=17810,
+   ["lightsoutlane.lvlx"]=23020,
+   ["potterywasteland.lvlx"]=15500,
+   ["creepycrawlycavern.lvlx"]=20470,
+   ["cannonshotfacility.lvlx"]=29310,
+   ["supersubmarine.lvlx"]=24160,
+   ["floodedforest.lvlx"]=20470,
+   ["chaosfactory.lvlx"]=21480,
+   ["shroomforest.lvlx"]=36290,
+   ["cloudy_climb.lvlx"]=22430,
+   ["mysticmines.lvlx"]=15260,
+   ["tutorial.lvlx"]=16390,
+   ["submergedunderground.lvlx"]=15650,
+   ["cyberspacehellscape.lvlx"]=19110,
+   ["aridsandscape.lvlx"]=22480,
+   ["waterfallplains.lvlx"]=27660,
+   ["hillierhills.lvlx"]=19440
 },
 --[7]--
 {
@@ -56,42 +56,42 @@
 },
 --[8]--
 {
-
+   ["rainyruins.lvlx"]={13},
+   ["hub.lvlx"]={14},
+   ["lightsoutlane.lvlx"]={15},
+   ["potterywasteland.lvlx"]={16},
+   ["creepycrawlycavern.lvlx"]={17},
+   ["cannonshotfacility.lvlx"]={18},
+   ["supersubmarine.lvlx"]={19},
+   ["floodedforest.lvlx"]={20},
+   ["chaosfactory.lvlx"]={21},
+   ["shroomforest.lvlx"]={22},
+   ["cloudy_climb.lvlx"]={23},
+   ["mysticmines.lvlx"]={24},
+   ["tutorial.lvlx"]={25},
+   ["submergedunderground.lvlx"]={26},
+   ["cyberspacehellscape.lvlx"]={27},
+   ["aridsandscape.lvlx"]={28},
+   ["waterfallplains.lvlx"]={29},
+   ["hillierhills.lvlx"]={30}
 },
 --[9]--
 {
-   ["creepycrawlycavern.lvlx"]={13},
-   ["aridsandscape.lvlx"]={14},
-   ["floodedforest.lvlx"]={15},
-   ["submergedunderground.lvlx"]={16},
-   ["mysticmines.lvlx"]={17},
-   ["lightsoutlane.lvlx"]={18},
-   ["rainyruins.lvlx"]={19},
-   ["supersubmarine.lvlx"]={20},
-   ["cyberspacehellscape.lvlx"]={21},
-   ["cannonshotfacility.lvlx"]={22},
-   ["waterfallplains.lvlx"]={23},
-   ["shroomforest.lvlx"]={24},
-   ["hillierhills.lvlx"]={25},
-   ["cloudy_climb.lvlx"]={26},
-   ["potterywasteland.lvlx"]={27},
-   ["tutorial.lvlx"]={28},
-   ["chaosfactory.lvlx"]={29},
-   ["hub.lvlx"]={30}
+   ["10"]={31},
+   ["16"]={32},
+   ["13"]={33},
+   ["15"]={34},
+   ["14"]={35},
+   ["12"]={36},
+   ["11"]={37},
+   ["6"]={38},
+   ["7"]={39},
+   ["8"]={40},
+   ["9"]={41}
 },
 --[10]--
 {
-   ["8"]={31},
-   ["16"]={32},
-   ["10"]={33},
-   ["11"]={34},
-   ["12"]={35},
-   ["15"]={36},
-   ["9"]={37},
-   ["14"]={38},
-   ["13"]={39},
-   ["6"]={40},
-   ["7"]={41}
+   ["score"]=0
 },
 --[11]--
 {
@@ -99,219 +99,219 @@
 },
 --[12]--
 {
-   ["score"]=0
+
 },
 --[13]--
 {
    1,
    1,
-   ["alive"]={42},
-   ["maxID"]=2
+   ["maxID"]=2,
+   ["alive"]={42}
 },
 --[14]--
 {
-   1,
-   1,
-   ["alive"]={43},
-   ["maxID"]=2
+   ["maxID"]=0,
+   ["alive"]={43}
 },
 --[15]--
 {
    1,
    1,
-   ["alive"]={44},
-   ["maxID"]=2
+   ["maxID"]=2,
+   ["alive"]={44}
 },
 --[16]--
 {
    1,
    1,
-   ["alive"]={45},
-   ["maxID"]=2
+   ["maxID"]=2,
+   ["alive"]={45}
 },
 --[17]--
 {
    1,
    1,
-   ["alive"]={46},
-   ["maxID"]=2
+   ["maxID"]=2,
+   ["alive"]={46}
 },
 --[18]--
 {
    1,
    1,
-   ["alive"]={47},
-   ["maxID"]=2
+   ["maxID"]=2,
+   ["alive"]={47}
 },
 --[19]--
 {
    1,
    1,
-   ["alive"]={48},
-   ["maxID"]=2
+   ["maxID"]=2,
+   ["alive"]={48}
 },
 --[20]--
 {
    1,
    1,
-   ["alive"]={49},
-   ["maxID"]=2
+   ["maxID"]=2,
+   ["alive"]={49}
 },
 --[21]--
 {
    1,
    1,
-   ["alive"]={50},
-   ["maxID"]=2
+   ["maxID"]=2,
+   ["alive"]={50}
 },
 --[22]--
 {
    1,
    1,
-   ["alive"]={51},
-   ["maxID"]=2
+   ["maxID"]=2,
+   ["alive"]={51}
 },
 --[23]--
 {
    1,
    1,
-   ["alive"]={52},
-   ["maxID"]=2
+   ["maxID"]=2,
+   ["alive"]={52}
 },
 --[24]--
 {
    1,
    1,
-   ["alive"]={53},
-   ["maxID"]=2
+   ["maxID"]=2,
+   ["alive"]={53}
 },
 --[25]--
 {
    1,
    1,
-   ["alive"]={54},
-   ["maxID"]=2
+   ["maxID"]=2,
+   ["alive"]={54}
 },
 --[26]--
 {
    1,
    1,
-   ["alive"]={55},
-   ["maxID"]=2
+   ["maxID"]=2,
+   ["alive"]={55}
 },
 --[27]--
 {
    1,
    1,
-   ["alive"]={56},
-   ["maxID"]=2
+   ["maxID"]=2,
+   ["alive"]={56}
 },
 --[28]--
 {
    1,
    1,
-   ["alive"]={57},
-   ["maxID"]=2
+   ["maxID"]=2,
+   ["alive"]={57}
 },
 --[29]--
 {
    1,
    1,
-   ["alive"]={58},
-   ["maxID"]=2
+   ["maxID"]=2,
+   ["alive"]={58}
 },
 --[30]--
 {
-   ["alive"]={59},
-   ["maxID"]=0
+   1,
+   1,
+   ["maxID"]=2,
+   ["alive"]={59}
 },
 --[31]--
 {
-   ["0x10A"]=0,
    ["0x108"]=0,
+   ["0x10A"]=0,
    ["0x16"]=1,
-   ["reservePowerup"]=0,
-   ["powerup"]=1
+   ["powerup"]=1,
+   ["reservePowerup"]=0
 },
 --[32]--
 {
-   ["0x10A"]=0,
    ["0x108"]=0,
+   ["0x10A"]=0,
    ["0x16"]=1,
-   ["reservePowerup"]=0,
-   ["powerup"]=1
+   ["powerup"]=1,
+   ["reservePowerup"]=0
 },
 --[33]--
 {
-   ["0x10A"]=0,
    ["0x108"]=0,
+   ["0x10A"]=0,
    ["0x16"]=1,
-   ["reservePowerup"]=0,
-   ["powerup"]=1
+   ["powerup"]=1,
+   ["reservePowerup"]=0
 },
 --[34]--
 {
-   ["0x10A"]=0,
    ["0x108"]=0,
+   ["0x10A"]=0,
    ["0x16"]=1,
-   ["reservePowerup"]=0,
-   ["powerup"]=1
+   ["powerup"]=1,
+   ["reservePowerup"]=0
 },
 --[35]--
 {
-   ["0x10A"]=0,
    ["0x108"]=0,
+   ["0x10A"]=0,
    ["0x16"]=1,
-   ["reservePowerup"]=0,
-   ["powerup"]=1
+   ["powerup"]=1,
+   ["reservePowerup"]=0
 },
 --[36]--
 {
-   ["0x10A"]=0,
    ["0x108"]=0,
+   ["0x10A"]=0,
    ["0x16"]=1,
-   ["reservePowerup"]=0,
-   ["powerup"]=1
+   ["powerup"]=1,
+   ["reservePowerup"]=0
 },
 --[37]--
 {
-   ["0x10A"]=0,
    ["0x108"]=0,
+   ["0x10A"]=0,
    ["0x16"]=1,
-   ["reservePowerup"]=0,
-   ["powerup"]=1
+   ["powerup"]=1,
+   ["reservePowerup"]=0
 },
 --[38]--
 {
-   ["0x10A"]=0,
    ["0x108"]=0,
+   ["0x10A"]=0,
    ["0x16"]=1,
-   ["reservePowerup"]=0,
-   ["powerup"]=1
+   ["powerup"]=1,
+   ["reservePowerup"]=0
 },
 --[39]--
 {
-   ["0x10A"]=0,
    ["0x108"]=0,
+   ["0x10A"]=0,
    ["0x16"]=1,
-   ["reservePowerup"]=0,
-   ["powerup"]=1
+   ["powerup"]=1,
+   ["reservePowerup"]=0
 },
 --[40]--
 {
-   ["0x10A"]=0,
    ["0x108"]=0,
+   ["0x10A"]=0,
    ["0x16"]=1,
-   ["reservePowerup"]=0,
-   ["powerup"]=1
+   ["powerup"]=1,
+   ["reservePowerup"]=0
 },
 --[41]--
 {
-   ["0x10A"]=0,
    ["0x108"]=0,
+   ["0x10A"]=0,
    ["0x16"]=1,
-   ["reservePowerup"]=0,
-   ["powerup"]=1
+   ["powerup"]=1,
+   ["reservePowerup"]=0
 },
 --[42]--
 {
@@ -320,8 +320,7 @@
 },
 --[43]--
 {
-   true,
-   true
+
 },
 --[44]--
 {
@@ -400,6 +399,7 @@
 },
 --[59]--
 {
-
+   true,
+   true
 }
 }

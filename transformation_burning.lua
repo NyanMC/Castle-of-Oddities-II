@@ -33,6 +33,10 @@ burningendframes = 11,
 
 firestarterNPC = {}
 
+fireproofNPC = {251, 252, 253, 994}
+-- added by ChromaNyan, default NPCs are the rupees and gold mushroom as they otherwise have a chance to be instantly vaporized when trying to collect them on fire
+-- why in the world is this not a thing by default it fixes so many bugs
+
 firestarterBlock = {1151}	-- default block: Hot Block
 
 flammableBlock = {801}		-- default block: Flammable Block (that does the chain reaction)
@@ -41,6 +45,10 @@ ultraflammableBlock = {669}	-- default Block: Icy Block
 
 function burning.addFireStarterNPC(id)
 	table.insert(firestarterNPC, id)
+end
+
+function burning.addFireProofNPC(id)
+	table.insert(fireproofNPC, id)
 end
 
 function burning.addFireStarterBlock(id)
@@ -340,8 +348,8 @@ end
 function burning.onPlayerHarm(event,player)
 	if event.cancelled or not isRegistered then return end
 	if burning.isBurning then	-- if the player is burning then tear through every enemy that does not trigger the burning rush
-		for player,n in ipairs(Colliders.getColliding{atype = Colliders.NPC, b = player, filter = function(o) if not o.friendly and not o.isHidden and not (table.contains(firestarterNPC,o.id)) then return true end end}) do
-                n:harm()
+		for player,n in ipairs(Colliders.getColliding{atype = Colliders.NPC, b = player, filter = function(o) if not o.friendly and not o.isHidden and not (table.contains(firestarterNPC, o.id) or table.contains(fireproofNPC, o.id)) then return true end end}) do
+			n:harm()
 		end
 		event.cancelled = true	-- and don't take damage
 	else		-- trigger the burning rush instead of getting damaged when the npc or block is actually not cold enough

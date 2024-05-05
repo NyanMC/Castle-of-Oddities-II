@@ -17,13 +17,14 @@ dashattacking = require("wariodashattacking")
 burning = require("transformation_burning")
 bouncing = require("transformation_bouncing")
 
-Player.setCostume(1,"wario",true)
+Player.setCostume(1,"wario",false)
 
 currentlyBoss = false
 isPanic = false
 uniquePanicMusic = true
 hasWorld5EscapeMusic = false
 isMetal = false
+flingCoins = true
 
 local windowNamePrefix = nil
 
@@ -59,6 +60,8 @@ end
 function onStart()
 
     kickIfOutdated()
+    
+    Player.setCostume(1,"wario",false)
 
 	--wariodashing.blacklistBlock(293)	-- STRONG SMB2-Bricks (not breakable anymore)
 	--wariodashing.whitelistBlock(124)	-- weak Ghost House Blocks (breakable)
@@ -72,6 +75,8 @@ function onStart()
 	wariorolling.whitelistCharacter(1,"rollingframes.png")
 	bouncing.whitelistCharacter(1,"bouncingframes.png")
 	burning.whitelistCharacter(1,"burningframes.png","ashesrisingframes.png")
+
+    wariodashing.blacklistBlock(457)	-- STRONG Tier 3 Powerup Brick
 	
 	burning.addFireStarterNPC(307) 	-- firesnake (all of these don't hurt Wario but make him start burning instead)
 	burning.addFireStarterNPC(308) 	-- firesnake trail
@@ -88,6 +93,7 @@ function onStart()
 	burning.addFlammableBlock(280)	-- red Block (will break when Wario is fully burning and touching it)
 	
 	burning.addUltraflammableBlock(620) -- frozen coin (will break when run into)
+	burning.addUltraflammableBlock(669) -- icy block
 	
 	bouncing.addBouncingStarterNPC(617)	-- hammer bro hammers make you bounce now
 	bouncing.addBouncingStarterNPC(37)	-- test
@@ -96,7 +102,7 @@ function onStart()
 	hudoverride.visible.itembox = false
     hudoverride.visible.lives = false
     hudoverride.visible.coins = false
-    if not Misc.inMarioChallenge() then
+    if not (Misc.inMarioChallenge() and not Misc.inEditor()) then
         Misc.score(Misc.score() * -1)
         Misc.coins(Misc.coins() * -1)
         mem(0x00B2C5AC, FIELD_FLOAT, 99)
@@ -110,6 +116,11 @@ function onExit()
 end
 
 function onTick()
+    if Player.getCostume(CHARACTER_MARIO) ~= "wario" then
+        Player.setCostume(1,"wario",false)
+    end
+
+
 	player:mem(0x160, FIELD_WORD, 10)
 	if player.powerup == 1 then player.powerup = 2 end
     if Misc.coins() >= 99 then
@@ -142,16 +153,18 @@ function onTick()
 end
 
 function onPostPlayerHarm(harmedplayer)
-    if Misc.inMarioChallenge() then
-        harmedplayer:kill()
+    if Misc.inMarioChallenge() and not Misc.inEditor() then
+        return
     end
     if Misc.score() >= 2000 then
         Misc.score(-2000)
 
-        for i=1,10 do
-            local newCoin = NPC.spawn(787, player.x + 0.5 * player.width, player.y + 0.5 * player.height, player.section, false, true)
-            newCoin.speedX = rng.random(-10,10)
-            newCoin.speedY = rng.random(-10,-5)
+        if flingCoins then
+            for i=1,10 do
+                local newCoin = NPC.spawn(787, player.x + 0.5 * player.width, player.y + 0.5 * player.height, player.section, false, true)
+                newCoin.speedX = rng.random(-10,10)
+                newCoin.speedY = rng.random(-10,-5)
+            end
         end
     else
         Misc.score(Misc.score() * -1)
@@ -173,6 +186,9 @@ function onPlayerHarm(token, p)
 end
 
 function onPlayerKill(token, p)
+    if Misc.inMarioChallenge() and not Misc.inEditor() then
+        return
+    end
     if not currentlyBoss then
         token.cancelled = true
         if p.screen.top >= 600 then -- player is below the bottom of the screen, there are edge cases where they can be hit from something that isn't a bottomless pit but those are rare
@@ -240,7 +256,7 @@ function onEvent(name)
         switch.setMaxTime(switch.getRemainingTime() + 15)
 		Audio.SeizeStream(-1)
 		Audio.MusicStop()
-        if not Misc.inMarioChallenge() then -- we don't reset score for mario challengers so don't save their score to file (plus that might screw with mario challenge if i did? idk)
+        if not (Misc.inMarioChallenge() and not Misc.inEditor()) then -- we don't reset score for mario challengers so don't save their score to file (plus that might screw with mario challenge if i did? idk)
             if (not SaveData.topscores[Level.filename()]) or SaveData.topscores[Level.filename()] < Misc.score() then
                 SaveData.topscores[Level.filename()] = Misc.score()
             end

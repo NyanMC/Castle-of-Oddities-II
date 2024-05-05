@@ -41,6 +41,8 @@ Music:
         Rogue's Gallery (Mirage Saloon 2)
         Skyway Octane (Mirage Saloon 1 S&T)
         Wildstyle Pistolero (Mirage Saloon 1 K)
+    Sonic Robo Blast 2 - Mystic Realm Community Edition:
+        Vulkan Forge Zone (https://www.youtube.com/watch?v=iF7RLLzFlqw)
     Sonic Superstars:
         Boss 2
         Bridge Island Zone 1
