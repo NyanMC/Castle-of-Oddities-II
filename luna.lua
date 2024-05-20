@@ -25,6 +25,8 @@ uniquePanicMusic = true
 hasWorld5EscapeMusic = false
 isMetal = false
 flingCoins = true
+doHurtEffects = true
+scoreMult = 1
 
 local windowNamePrefix = nil
 
@@ -127,18 +129,18 @@ function onTick()
         Misc.warn("Coin count reached or exceeded 99, consider reducing concentration of coins")
     end
 	if Misc.coins() > 25 then -- player has a lot of coins, turn them into points faster to avoid risk of overflowing into a 1-up
-		Misc.coins(-5)
+		Misc.coins(-25)
         if not isPanic then
-            Misc.score(50)
+            Misc.score(250 * scoreMult)
         else
-            Misc.score(100)
+            Misc.score(500 * scoreMult)
         end
     elseif Misc.coins() > 0 then
         Misc.coins(-1)
         if not isPanic then
-            Misc.score(10)
+            Misc.score(10 * scoreMult)
         else
-            Misc.score(20)
+            Misc.score(20 * scoreMult)
         end
     end
 
@@ -156,6 +158,14 @@ function onPostPlayerHarm(harmedplayer)
     if Misc.inMarioChallenge() and not Misc.inEditor() then
         return
     end
+
+    if player.character == CHARACTER_MARIO then
+        local rand = math.random(1, 3)
+        SFX.play(Misc.resolveFile("no_"..rand..".wav"))
+    end
+
+    if not doHurtEffects then return end
+
     if Misc.score() >= 2000 then
         Misc.score(-2000)
 
@@ -172,10 +182,6 @@ function onPostPlayerHarm(harmedplayer)
             harmedplayer:kill()
             return
         end
-    end
-    if player.character == CHARACTER_MARIO then
-        local rand = math.random(1, 3)
-        SFX.play(Misc.resolveFile("no_"..rand..".wav"))
     end
 end
 

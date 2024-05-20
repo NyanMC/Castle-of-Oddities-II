@@ -13,6 +13,8 @@ Level Specific Lua:
         Exclamation Mark Block by MrDoubleA
     Cyberspace Hellscape:
         Momentum Teleporters by Emral
+    Gauntlet of Pain:
+        warioHealth by MrNameless
 Music:
     Kirby and the Forgotten Land:
         Originull Wasteland
@@ -40,6 +42,7 @@ Music:
         Built to Rule (Titanic Monarch 1)
         Rogue's Gallery (Mirage Saloon 2)
         Skyway Octane (Mirage Saloon 1 S&T)
+        Steel Cortex (Titanic Monarch 2)
         Wildstyle Pistolero (Mirage Saloon 1 K)
     Sonic Robo Blast 2 - Mystic Realm Community Edition:
         Vulkan Forge Zone (https://www.youtube.com/watch?v=iF7RLLzFlqw)
