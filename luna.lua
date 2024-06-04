@@ -30,7 +30,7 @@ scoreMult = 1
 
 local windowNamePrefix = nil
 
-SaveData.fun = SaveData.fun or math.random(1, 100)
+SaveData.fun = SaveData.fun or math.random(1, 70)
 
 SaveData.topscores = SaveData.topscores or {}
 
@@ -306,7 +306,7 @@ newcheats.register("havesomefun", { onActivate =
                                         if (isOverworld) then
                                             return true
                                         end
-                                        SaveData.fun = math.random(1, 100)
+                                        SaveData.fun = math.random(1, 70)
                                         return true;
                                     end, activateSFX = Misc.resolveSoundFile("gbaroulette.ogg")})
 

@@ -1,0 +1,7 @@
+priority=-85
+frames=8
+framespeed=8
+width=32
+height=64
+gfxwidth=32
+gfxheight=64

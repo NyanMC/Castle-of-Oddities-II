@@ -5,6 +5,7 @@ Global Lua:
     FakeBlocks.lua by Sambo
     pauseMenu.lua by Marioman2007
     Gold Mushroom by FutureNyanCat
+    Wario Movement Quintpack by "Master" of Disaster
 Level Specific Lua:
     Rainy Ruins:
         icantswim by cold soup
@@ -26,15 +27,19 @@ Music:
         Petalburg
     Pizza Tower:
         Distasteful Anchovi [JC RE-EDIT]
+        I Need A Noise
         It's Pizza Time!
+        Receding Hairline Celebration Party
         The Death That I Deservioli
         World Wide Noise
     Plok:
         Cotton Island
+    Pokemon Mystery Dungeon - Red Rescue Team:
+        Kecleon Shop
     Shovel Knight Dig:
         Spore Judgement
-        Thermal Vent
         Pest Friends
+        Thermal Vent
     Sonic Adventure:
         Tornado (Windy Valley)
         Windy Hill (Windy Valley)
